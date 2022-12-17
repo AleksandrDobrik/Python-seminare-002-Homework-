@@ -6,7 +6,7 @@ from random import randint as RI
 
 my_list = []
 
-n = 1
+n = 10
 
 for i in range(n):
     my_list.append(RI(10,99))
@@ -22,7 +22,7 @@ def Mixed_list_one(list, n):
     return mixed_list
 # первый метод который пришел в голову, но мне кажеться более затратным
 def Mixed_list_two(list):
-    for i in range(0,len(list)-1):
+    for i in range(0,len(list)):
         index_mix = RI(0,n-1)
         help = list[i]
         list[i] = list[index_mix]
